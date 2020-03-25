@@ -23,12 +23,12 @@ public class Main {
 		Composite computerCase2 = new Case(100);
 		computerCase2.addComponent(mb);
 		
-		Component[] order = {computerCase, computerCase2};
+		Component[] order = {computerCase, computerCase2, new Case(50)};
 		int totalPrice = 0;
 		for(Component c: order) {
 			totalPrice+=c.calculatePrice();
 		}
-		System.out.println("Total (2 cases including same components): " + totalPrice);
+		System.out.println("Total (2 cases including same components and an empty case): " + totalPrice);
 	}
 
 }
