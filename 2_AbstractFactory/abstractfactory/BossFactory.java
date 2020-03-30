@@ -1,6 +1,24 @@
 package abstractfactory;
 
-public class BossFactory extends ClothingFactory{
+public class BossFactory extends ClothingFactory {
+
+	// Singleton, lazy initialization/synchronized instance creation
+	private static volatile BossFactory instance = null;
+
+	private BossFactory() {
+	}
+
+	public static BossFactory getInstance() {
+		if (instance == null) {
+			synchronized (BossFactory.class) {
+				if (instance == null) {
+					instance = new BossFactory();
+				}
+			}
+		}
+
+		return instance;
+	}
 
 	@Override
 	public Jeans createJeans() {
