@@ -1,0 +1,2 @@
+OLD = abstractfactory.AdidasFactory
+NEW = abstractfactory.BossFactory

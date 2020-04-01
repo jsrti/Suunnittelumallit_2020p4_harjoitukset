@@ -6,5 +6,7 @@
 	<classpathentry kind="src" path="3_Composite"/>
 	<classpathentry kind="src" path="4_Observer"/>
 	<classpathentry kind="src" path="5_Singleton"/>
+	<classpathentry kind="src" path="6_Decorator"/>
+	<classpathentry kind="src" path="7_State"/>
 	<classpathentry kind="output" path="1_FactoryMethod/bin"/>
 </classpath>
