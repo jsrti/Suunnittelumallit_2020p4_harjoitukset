@@ -37,6 +37,29 @@ public class Trainer {
 		}
 	}
 
+	public void listPokemons() {
+		int i = 1;
+		for(Pokemon p: ownedPokemons) {
+			System.out.println(i + ": " + name + " - hp: " + p.getCurrentHP());
+			i++;
+		}
+	}
+	
+	public boolean selectPokemon(int index) {
+		boolean success = false;
+		if(index<ownedPokemons.size()) {
+			if(ownedPokemons.get(index).getCurrentHP()>0) {
+				activePokemon = ownedPokemons.get(index);
+				success = true;
+			}else {
+				System.out.println("That pokemon is not ready to fight.");
+			}
+		}else {
+			System.out.println("Invalid selection.");
+		}
+		return success;
+	}
+	
 	public void switchPokemon() {
 		for (Pokemon p : ownedPokemons) {
 			if (p.getCurrentHP() > 0) {

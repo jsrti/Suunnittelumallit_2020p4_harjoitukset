@@ -24,7 +24,7 @@ public class PokemonGame extends Game {
 			System.out.println("Player " + (i + 1) + ", enter trainer name");
 			String name = scanner.nextLine();
 			trainers[i] = new Trainer(name);
-			System.out.println("Good luck, trainer " + name + "!");
+			System.out.println("Good luck, trainer " + name + "!\n");
 			for (int j = 0; j < trainers[i].getMaxOwnedPokemons(); j++) {
 				trainers[i].addPokemon(new Pokemon(new Charmander()));
 			}
