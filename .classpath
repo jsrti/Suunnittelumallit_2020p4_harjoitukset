@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="6_Decorator"/>
 	<classpathentry kind="src" path="7_State"/>
 	<classpathentry kind="src" path="8_TemplateMethod"/>
+	<classpathentry kind="src" path="9_Strategy"/>
 	<classpathentry kind="output" path="1_FactoryMethod/bin"/>
 </classpath>
