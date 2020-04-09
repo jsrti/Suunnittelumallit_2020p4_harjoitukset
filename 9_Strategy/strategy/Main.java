@@ -19,7 +19,7 @@ public class Main {
 		testSortTiming(arraySorter, testArrayBase);
 	}
 
-	public static void testSortTiming(ArraySorter sorter, int[] unsortedArray) {
+	private static void testSortTiming(ArraySorter sorter, int[] unsortedArray) {
 		int[] testArrayClone = unsortedArray.clone();
 		// printArray(testArrayClone);
 		long time = sorter.timedSort(testArrayClone);
@@ -27,7 +27,7 @@ public class Main {
 		System.out.println(sorter.getSelectedStrategyName() + ": " + time / 1000000f + " ms");
 	}
 
-	public static void printArray(int[] array) {
+	private static void printArray(int[] array) {
 		System.out.println();
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
@@ -38,7 +38,7 @@ public class Main {
 		System.out.println();
 	}
 
-	public static int[] generateUnsortedArray(int size) {
+	private static int[] generateUnsortedArray(int size) {
 		int[] arr = new int[size];
 		Random r = new Random();
 		for (int i = 0; i < size; i++) {
