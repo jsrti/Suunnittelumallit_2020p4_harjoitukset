@@ -10,5 +10,7 @@
 	<classpathentry kind="src" path="7_State"/>
 	<classpathentry kind="src" path="8_TemplateMethod"/>
 	<classpathentry kind="src" path="9_Strategy"/>
+	<classpathentry kind="src" path="10_Chain_of_Responsibility"/>
+	<classpathentry kind="src" path="11_Memento"/>
 	<classpathentry kind="output" path="1_FactoryMethod/bin"/>
 </classpath>
