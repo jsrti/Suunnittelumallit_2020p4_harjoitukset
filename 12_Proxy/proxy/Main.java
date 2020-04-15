@@ -22,7 +22,7 @@ public class Main {
             System.out.println();
         }
         
-        System.out.println("\nRebrowsing loaded photos:\n");
+        System.out.println("\nRebrowsing through the (loaded) photos:\n");
         for(Image img : photoAlbum) {
             System.out.print(img.showData() + ":\n");
             img.displayImage();
