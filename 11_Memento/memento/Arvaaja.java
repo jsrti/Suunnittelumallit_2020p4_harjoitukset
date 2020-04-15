@@ -2,6 +2,7 @@ package memento;
 
 import java.util.Random;
 
+//caretaker, memento tallessa (Object obj)
 public class Arvaaja implements Runnable{
 	private static int tunnisteNumero = 0;
 	private String nimi;

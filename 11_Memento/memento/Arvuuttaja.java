@@ -2,6 +2,7 @@ package memento;
 
 import java.util.Random;
 
+//originator, sisäluokkana memento
 public class Arvuuttaja {
 	private static Random random = new Random();
 
