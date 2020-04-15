@@ -45,6 +45,7 @@ public class Pokemon {
 
 	protected void takeDamage(int damage) {
 		if (currentHP - damage > 0) {
+			currentHP -= damage;
 			System.out.println(owner + "'s " + getName() + " took " + damage + " damage.");
 			System.out.println("HP left: " + getCurrentHP() + "\n");
 		} else {
@@ -59,5 +60,9 @@ public class Pokemon {
 
 	public String getOwner() {
 		return this.owner;
+	}
+	
+	public void accept(PokemonVisitor visitor) {
+		currentState.accept(visitor);
 	}
 }

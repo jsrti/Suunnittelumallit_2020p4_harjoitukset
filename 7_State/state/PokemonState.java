@@ -1,6 +1,8 @@
 package state;
 
 abstract class PokemonState {
+	protected abstract void accept(PokemonVisitor visitor);
+	
 	protected abstract String getName();
 
 	protected abstract int getRequiredXP();
@@ -12,6 +14,8 @@ abstract class PokemonState {
 	protected abstract int getDefence();
 
 	protected abstract int getAttackPower();
+	
+	protected abstract void increaseAttackPower(int ap);
 
 	protected void attack(Pokemon player, Pokemon enemy) {
 		System.out.println(player.getOwner() + "'s " + player.getName() + " attacks.");
