@@ -13,5 +13,6 @@
 	<classpathentry kind="src" path="10_Chain_of_Responsibility"/>
 	<classpathentry kind="src" path="11_Memento"/>
 	<classpathentry kind="src" path="12_Proxy"/>
+	<classpathentry kind="src" path="14_Builder"/>
 	<classpathentry kind="output" path="1_FactoryMethod/bin"/>
 </classpath>
