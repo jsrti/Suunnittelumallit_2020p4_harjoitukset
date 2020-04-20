@@ -14,5 +14,6 @@
 	<classpathentry kind="src" path="11_Memento"/>
 	<classpathentry kind="src" path="12_Proxy"/>
 	<classpathentry kind="src" path="14_Builder"/>
+	<classpathentry kind="src" path="15_Adapter"/>
 	<classpathentry kind="output" path="1_FactoryMethod/bin"/>
 </classpath>
